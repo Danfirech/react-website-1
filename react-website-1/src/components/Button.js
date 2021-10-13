@@ -20,7 +20,7 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <LINK to="/sign-up" className="btn-mobile">
+    <Link to="/sign-up" className="btn-mobile">
       <button
         className={`btn ${checkButtonStytle} ${checkButtonSize}`}
         onClick={onClick}
@@ -28,6 +28,6 @@ export const Button = ({
       >
         {children}
       </button>
-    </LINK>
+    </Link>
   );
 };
